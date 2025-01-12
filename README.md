@@ -3,5 +3,6 @@
 
 - 공모전 주제: 화력발전 대기오염물질 배출 최소화를 위한 희석재 투입량 분석 모델 개발
 - InletSox에 따라 SOx 배출량 예측과 석회석 최적량 도출 알고리즘 모델
-<img src="[https://github.com/user-attachments/assets/6803741f-b02e-4712-85a7-5d1c90e6f25f]" width="998" height="1496"/>
+<img src="https://github.com/user-attachments/assets/80f04613-e9c2-40ae-b84b-bf9462a0d487" width="998" height="1496" alt="공모전수상작품">
 구글 코랩 환경에서 구현하였습니다.
+
