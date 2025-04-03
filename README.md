@@ -19,6 +19,7 @@
 
 ### 3) **이상치 제거**
 
+![outlier](https://github.com/user-attachments/assets/f2c9f544-d7a2-4790-a536-60e70ce07aac)
 
 - 발전량 0 또는 1인 경우, SOx 값이 0인 경우 제거
 - Outlet SOx에 대해 IQR 기반의 이상치 제거
@@ -40,6 +41,7 @@
 ### 3) **Inlet SOx 구간별 석회석 평균 사용량**
 
 - Inlet SOx를 구간으로 나눈 후 각 구간별 석회석 평균 사용량 계산
+![input](https://github.com/user-attachments/assets/a54ffc25-92d4-496e-99d7-8dfeebcfde76)
 
 
 
@@ -58,7 +60,7 @@
 - MSE = 73.76, R² = 0.974로 **우수한 예측 성능 확보**
 
 ### 3) **GridSearchCV를 통한 하이퍼파라미터 튜닝**
-
+![gridsearch](https://github.com/user-attachments/assets/40d1332b-f341-4fd2-8335-e3fd166bdd0d)
 
 
 - `max_depth`, `learning_rate`, `n_estimators`, `min_samples_split` 등 그리드 서치 수행
@@ -87,6 +89,7 @@
 
 - 입력값: `Inlet SOx = 200`
 
+![resultsample](https://github.com/user-attachments/assets/3e5d450e-b6b5-4550-93c2-d046b58e93d2)
 
 
 - 도출 결과: `Optimal Limestone = 6.74`, `예측 SoxDiff = 197.57`
