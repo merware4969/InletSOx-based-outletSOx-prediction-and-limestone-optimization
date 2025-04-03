@@ -3,6 +3,17 @@
 - **목표**: 발전소 개별 호기(3~6호기)의 운전 데이터로부터, **석회석 사용량이 SOx 저감에 얼마나 영향을 미치는지 예측**하고, 주어진 조건(Inlet SOx)에 따라 **최적 석회석 사용량을 자동 산출**하는 알고리즘 개발
 - **핵심 성과**: Gradient Boosting Regressor 기반 SoxDiff 예측 모델 구축 및 최적 석회석 산출 함수 구현
 
+## 사용 기술 및 라이브러리
+
+| 구분 | 기술 |
+| --- | --- |
+| 데이터 전처리 | `pandas`, `numpy`, `matplotlib`, `seaborn` |
+| 이상치 제거 | IQR 기반 방식 |
+| 모델 학습 | `GradientBoostingRegressor` from `sklearn.ensemble` |
+| 모델 평가 | `mean_squared_error`, `r2_score` from `sklearn.metrics` |
+| 최적화 기법 | 반복 예측 기반 탐색 알고리즘 |
+| 모델 튜닝 | `GridSearchCV` from `sklearn.model_selection` |
+
 ---
 
 ## 1. 데이터 전처리
@@ -97,18 +108,6 @@
 
 ---
 
-## 사용 기술 및 라이브러리
-
-| 구분 | 기술 |
-| --- | --- |
-| 데이터 전처리 | `pandas`, `numpy`, `matplotlib`, `seaborn` |
-| 이상치 제거 | IQR 기반 방식 |
-| 모델 학습 | `GradientBoostingRegressor` from `sklearn.ensemble` |
-| 모델 평가 | `mean_squared_error`, `r2_score` from `sklearn.metrics` |
-| 최적화 기법 | 반복 예측 기반 탐색 알고리즘 |
-| 모델 튜닝 | `GridSearchCV` from `sklearn.model_selection` |
-
----
 
 ## 5. 배운 점
 
