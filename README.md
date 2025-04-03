@@ -1,7 +1,3 @@
-### **Source**
-
-https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone-optimization
-
 ## 프로젝트 개요
 
 - **목표**: 발전소 개별 호기(3~6호기)의 운전 데이터로부터, **석회석 사용량이 SOx 저감에 얼마나 영향을 미치는지 예측**하고, 주어진 조건(Inlet SOx)에 따라 **최적 석회석 사용량을 자동 산출**하는 알고리즘 개발
