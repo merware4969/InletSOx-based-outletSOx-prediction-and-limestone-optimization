@@ -41,6 +41,7 @@
 ### 3) **Inlet SOx 구간별 석회석 평균 사용량**
 
 - Inlet SOx를 구간으로 나눈 후 각 구간별 석회석 평균 사용량 계산
+
 ![input](https://github.com/user-attachments/assets/a54ffc25-92d4-496e-99d7-8dfeebcfde76)
 
 
