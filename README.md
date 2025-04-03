@@ -23,9 +23,6 @@ https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone
 
 ### 3) **이상치 제거**
 
-![image.png](attachment:05c626e4-cc95-4973-9c1f-bbecce5fdaa7:image.png)
-
-![image.png](attachment:856aab8f-618e-47ea-ae82-c34a7d4e5461:image.png)
 
 - 발전량 0 또는 1인 경우, SOx 값이 0인 경우 제거
 - Outlet SOx에 대해 IQR 기반의 이상치 제거
@@ -48,7 +45,7 @@ https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone
 
 - Inlet SOx를 구간으로 나눈 후 각 구간별 석회석 평균 사용량 계산
 
-![image.png](attachment:a0978818-e506-4617-a4ed-8e06d6006ab5:image.png)
+
 
 ---
 
@@ -66,7 +63,7 @@ https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone
 
 ### 3) **GridSearchCV를 통한 하이퍼파라미터 튜닝**
 
-![image.png](attachment:88534142-2e66-4864-9e14-7df09257688c:image.png)
+
 
 - `max_depth`, `learning_rate`, `n_estimators`, `min_samples_split` 등 그리드 서치 수행
 - 최적 파라미터 기반으로 모델 재학습 → Cross-Validation R² = 0.969
@@ -84,7 +81,7 @@ https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone
 - 초기 석회석 값에서 시작하여 예측된 SoxDiff의 변화가 기준(threshold)보다 작아질 때까지 반복
 - **조건 만족 시점의 석회석 투입량을 최적값으로 반환**
 
-![image.png](attachment:270165b7-8ca7-4ef9-b124-9f782b98a265:image.png)
+
 
 ### 3) **사용자 입력 기반 반복 실행**
 
@@ -94,7 +91,7 @@ https://github.com/merware4969/InletSOx-based-outletSOx-prediction-and-limestone
 
 - 입력값: `Inlet SOx = 200`
 
-![image.png](attachment:dc562de4-a813-4691-89ca-48d81d7e99a8:image.png)
+
 
 - 도출 결과: `Optimal Limestone = 6.74`, `예측 SoxDiff = 197.57`
 
